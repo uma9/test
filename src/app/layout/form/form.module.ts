@@ -9,11 +9,12 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MultiSelectAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+
 @NgModule({
     imports: [CommonModule, FormRoutingModule, PageHeaderModule, MaterialModule,
     MDBBootstrapModule,MultiSelectModule,MultiSelectAllModule,
     ButtonModule,
 ],
-    declarations: [FormComponent]
+    declarations: [FormComponent, ]
 })
 export class FormModule {}

@@ -33,19 +33,19 @@ a.atbd_wrapper1 {
                                             <h3>Add New</h3>
                                         </div> 
                                     </div>
-                                    <div class="atbd_listing_type">
+                                    <div class="atbd_listing_type ">
                                         <h4>Choose listing type</h4>
                                             
-                                        <mat-radio-group aria-label="Select an option">
+                                        <mat-radio-group aria-label="Select an option" class="col-md-12 row">
                                             <div class="col-md-6 col-xs-12">
                                                 <mat-radio-button value="1">  
-                                                    <h5 class="clr">Regular listing</h5>
+                                                    <a class="clr">Regular listing</a>
                                                 </mat-radio-button>
                                                   <span class="atbdp_make_str_green"> (5 Remaining)</span>
                                             </div>
                                             <div class="col-md-6 col-xs-12">
                                                 <mat-radio-button style="border-width: 5px;" value="2">  
-                                                    <h5 class="clr">Featured listing</h5>
+                                                    <a class="clr">Featured listing</a>
                                                 </mat-radio-button>
                                                 <span class="atbdp_make_str_green"> (5 Remaining)</span>
                                             </div>
@@ -206,13 +206,318 @@ a.atbd_wrapper1 {
                                 </div>
                             </div>
                         </div>
+                        <div class="atbd_content_module atbd_business_hour_module">
+                                <div class="atbd_content_module__tittle_area">
+                                    <div class="atbd_area_title atbd_wrapper1">
+                                        <h4>Opening/Business Hour Information</h4>
+                                    </div>
+                                </div>
+        
+                                <div class="atbdb_content_module_contents">
+                                  <div class="row">
+                                 
+        
+                                    <div class="col-md-12">
+                                    <div class="business-hour">
+                                    <div class="row">
+                                    <div class="col-md-12 col-xs-12">
+                                    <div class="enable247hour">
+                                        <mat-checkbox><a class="atbd_wrapper1" style="color: rgb(122, 130, 166);">
+                                            Hide business hours</a></mat-checkbox><br>
+                                        
+                                       
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-md-12 col-xs-12">
+                                    <div class="enable247hour">
+                                        <mat-checkbox class="hello" style="white-space: inherit">
+                                          <a class="atbd_wrapper1" style="color: rgb(122, 130, 166);">
+                                              Is this listing open 24 hours 7 days a weeks?
+                                          </a></mat-checkbox><br>
+                                        
+                                    </div>
+                                    </div>
+                                    </div>
+        
+                                    <div class="row atbd_wrapper1">
+                                    <div class="col-md-6 col-sm-12">
+        
+                                    <div class="form-group ">
+                                        <label for="bdbh_monday" class="atbd_day_label">Monday</label>
+                                        <div class="row atbd_row_bg">
+                                            <div class="col-lg-6 col-md-12 sol-sm-12">
+                                                <label for="bdbh_monday">Start time</label>
+                                                <input type="time" id="bdbh_monday" name="bdbh[monday][start]" value="" class="form-control directory_field">
+                                            </div>
+        
+                                            <div class="col-lg-6 col-md-12 sol-sm-12">
+                                                <label for="bdbh_monday_cls">Close time</label>
+                                                <input type="time" id="bdbh_monday_cls" name="bdbh[monday][close]" value="" class="form-control directory_field">
+                                            </div>
+                                        </div>
+        
+                                        <label for="tue_cls" class="atbd_mark_as_closed">
+                                            <input type="checkbox" name="bdbh[tuesday][remain_close]" 
+                                            value="1" id="tue_cls"> Mark as Closed 
+                                            <span class="cf-select"></span></label>
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label for="bdbh_tuesday" class="atbd_day_label">Tuesday</label>
+                                        <div class="row atbd_row_bg">
+                                            <div class="col-lg-6 col-md-12 sol-sm-12">
+                                                <label for="bdbh_tuesday">Start time</label>
+                                                <input type="time" id="bdbh_tuesday" name="bdbh[tuesday][start]" value="" class="form-control directory_field">
+                                            </div>
+        
+                                            <div class="col-lg-6 col-md-12 sol-sm-12">
+                                                <label for="bdbh_tuesday_cls">Close time</label>
+                                                <input type="time" id="bdbh_tuesday_cls" name="bdbh[tuesday][close]" value="" class="form-control directory_field">
+                                            </div>
+                                        </div>
+        
+        
+                                        <label for="tue_cls" class="atbd_mark_as_closed">
+                                          <input type="checkbox" name="bdbh[tuesday][remain_close]" 
+                                          value="1" id="tue_cls"> Mark as Closed 
+                                          <span class="cf-select"></span></label>
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label for="bdbh_wednesday" class="atbd_day_label">Wednesday</label>
+                                        <div class="row atbd_row_bg">
+                                            <div class="col-lg-6 col-md-12 sol-sm-12">
+                                                <label for="bdbh_wednesday">Start time</label>
+                                                <input type="time" id="bdbh_wednesday" name="bdbh[wednesday][start]" value="" class="form-control directory_field">
+                                            </div>
+        
+                                            <div class="col-lg-6 col-md-12 sol-sm-12">
+                                                <label for="bdbh_wednesday_cls">Close time</label>
+                                                <input type="time" id="bdbh_wednesday_cls" name="bdbh[wednesday][close]" value="" class="form-control directory_field">
+                                            </div>
+                                        </div>
+        
+        
+                                        <label for="wed_cls" class="atbd_mark_as_closed"><input type="checkbox" name="bdbh[wednesday][remain_close]" value="1" id="wed_cls"> Mark as Closed <span class="cf-select"></span></label>
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label for="bdbh_thursday" class="atbd_day_label">Thursday</label>
+                                        <div class="row atbd_row_bg">
+                                            <div class="col-lg-6 col-md-12 sol-sm-12">
+                                                <label for="bdbh_thursday">Start time</label>
+                                                <input type="time" id="bdbh_thursday" name="bdbh[thursday][start]" value="" class="form-control directory_field">
+                                            </div>
+        
+                                            <div class="col-lg-6 col-md-12 sol-sm-12">
+                                                <label for="bdbh_thursday_cls">Close time</label>
+                                                <input type="time" id="bdbh_thursday_cls" name="bdbh[thursday][close]" value="" class="form-control directory_field">
+                                            </div>
+                                        </div>
+        
+        
+                                        <label for="thu_cls" class="atbd_mark_as_closed"><input type="checkbox" name="bdbh[thursday][remain_close]" value="1" id="thu_cls"> Mark as Closed <span class="cf-select"></span></label>
+                                    </div>
+                                    </div> <!--ends col-md-6 col-sm-12-->
+        
+                                    <div class="col-md-6 col-sm-12">
+        
+                                    <div class="form-group">
+                                        <label for="bdbh_friday" class="atbd_day_label">Friday</label>
+                                        <div class="row atbd_row_bg">
+                                            <div class="col-lg-6 col-md-12 sol-sm-12">
+                                                <label for="bdbh_friday">Start time</label>
+                                                <input type="time" id="bdbh_friday" name="bdbh[friday][start]" value="" class="form-control directory_field">
+                                            </div>
+        
+                                            <div class="col-lg-6 col-md-12 sol-sm-12">
+                                                <label for="bdbh_friday_cls">Close time</label>
+                                                <input type="time" id="bdbh_friday_cls" name="bdbh[friday][close]" value="" class="form-control directory_field">
+                                            </div>
+                                        </div>
+        
+                                        <label for="fri_cls" class="atbd_mark_as_closed"><input type="checkbox" name="bdbh[friday][remain_close]" value="1" id="fri_cls"> Mark as Closed <span class="cf-select"></span></label>
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label for="bdbh_saturday" class="atbd_day_label">Saturday</label>
+                                        <div class="row atbd_row_bg">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <label for="bdbh_saturday">Start time</label>
+                                                <input type="time" id="bdbh_saturday" name="bdbh[saturday][start]" value="" class="form-control directory_field">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <label for="bdbh_saturday_cls">Close time</label>
+                                                <input type="time" id="bdbh_saturday_cls" name="bdbh[saturday][close]" value="" class="form-control directory_field">
+                                            </div>
+                                        </div>
+        
+                                        <label for="sat_cls" class="atbd_mark_as_closed"><input type="checkbox" name="bdbh[saturday][remain_close]" value="1" id="sat_cls"> Mark as Closed <span class="cf-select"></span></label>
+                                    </div>
+        
+                                    <div class="form-group">
+                                        <label for="bdbh_sunday" class="atbd_day_label">Sunday</label>
+                                        <div class="row atbd_row_bg">
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <label for="bdbh_sunday">Start time</label>
+                                                <input type="time" id="bdbh_sunday" name="bdbh[sunday][start]" value="" class="form-control directory_field">
+                                            </div>
+        
+                                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                                <label for="bdbh_sunday_cls">Close time</label>
+                                                <input type="time" id="bdbh_sunday_cls" name="bdbh[sunday][close]" value="" class="form-control directory_field">
+                                            </div>
+                                        </div>
+        
+        
+                                        <label for="sun_cls" class="atbd_mark_as_closed"><input type="checkbox" name="bdbh[sunday][remain_close]" value="1" id="sun_cls"> Mark as Closed <span class="cf-select"></span></label>
+                                    </div>
+                                    </div> <!--ends col-md-6 col-sm-12-->
+        
+                                    </div> <!--ends .row-->
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="atbd_content_module atbd_contact_information">
+                                    <div class="atbd_content_module__tittle_area">
+                                        <div class="atbd_area_title atbd_wrapper1">
+                                            <h4>Map</h4>
+                                        </div>
+                                    </div>
+            
+                                    <div class="atbdb_content_module_contents">
+                                                                                        <div class="form-group" id="atbdp_address">
+                                                <label for="address">Address:</label>
+                                                <input type="text" name="address" id="address" value="" class="form-control directory_field" placeholder="Listing address eg. New York, USA">
+                                                <div id="result">
+                                                    <ul></ul>
+                                                </div>
+                                            </div>
+            
+                                            <!--Show map only if it is not disabled in the settings-->
+                                            <!--Google map will be generated here using js-->
+                                                                                                <div class="form-group">
+                                                    <div class="map_wrapper">
+                                                                  <div id="gmap" class="olMap"><div id="OpenLayers_Map_1_OpenLayers_ViewPort" class="olMapViewport olControlDragPanActive olControlZoomBoxActive olControlPinchZoomActive olControlNavigationActive olControlDragFeatureActive" style="position: relative; overflow: hidden; width: 100%; height: 100%;"><div id="OpenLayers_Map_1_OpenLayers_Container" style="position: absolute; z-index: 749; left: 0px; top: 0px;"><div id="OpenLayers_Layer_OSM_17" dir="ltr" class="olLayerDiv olLayerGrid" style="position: absolute; width: 100%; height: 100%; z-index: 100;"><img class="olTileImage" crossorigin="anonymous" src="https://c.tile.openstreetmap.org/5/8/10.png" style="visibility: inherit; opacity: 1; position: absolute; left: -126px; top: 112px; width: 256px; height: 256px;"><img class="olTileImage" crossorigin="anonymous" src="https://b.tile.openstreetmap.org/5/9/10.png" style="visibility: inherit; opacity: 1; position: absolute; left: 130px; top: 112px; width: 256px; height: 256px;"><img class="olTileImage" crossorigin="anonymous" src="https://c.tile.openstreetmap.org/5/8/9.png" style="visibility: inherit; opacity: 1; position: absolute; left: -126px; top: -144px; width: 256px; height: 256px;"><img class="olTileImage" crossorigin="anonymous" src="https://c.tile.openstreetmap.org/5/9/9.png" style="visibility: inherit; opacity: 1; position: absolute; left: 130px; top: -144px; width: 256px; height: 256px;"><img class="olTileImage" crossorigin="anonymous" src="https://c.tile.openstreetmap.org/5/8/11.png" style="visibility: inherit; opacity: 1; position: absolute; left: -126px; top: 368px; width: 256px; height: 256px;"><img class="olTileImage" crossorigin="anonymous" src="https://a.tile.openstreetmap.org/5/9/11.png" style="visibility: inherit; opacity: 1; position: absolute; left: 130px; top: 368px; width: 256px; height: 256px;"></div><div id="OpenLayers_Layer_Text_19" dir="ltr" class="olLayerDiv" style="position: absolute; width: 100%; height: 100%; z-index: 330;"></div><div id="OpenLayers_Layer_Vector_54" dir="ltr" class="olLayerDiv" style="position: absolute; width: 100%; height: 100%; z-index: 725; left: 0px; top: 0px;"><svg id="OpenLayers_Layer_Vector_54_svgRoot" width="211" height="350" viewBox="0 0 211 350" style="display: block;"><g id="OpenLayers_Layer_Vector_54_root" transform="" style="visibility: visible;"><g id="OpenLayers_Layer_Vector_54_vroot"></g><g id="OpenLayers_Layer_Vector_54_troot"></g></g></svg></div></div><div id="OpenLayers_Control_Zoom_4" class="olControlZoom olControlNoSelect" unselectable="on" style="position: absolute; z-index: 1004;"><a href="#zoomIn" class="olControlZoomIn olButton">+</a><a href="#zoomOut" class="olControlZoomOut olButton">−</a></div><div id="OpenLayers_Control_ArgParser_5" class="olControlArgParser olControlNoSelect" unselectable="on" style="position: absolute; z-index: 1004;"></div><div id="OpenLayers_Control_Attribution_6" class="olControlAttribution olControlNoSelect" unselectable="on" style="position: absolute; z-index: 1004;">© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</div><div id="OpenLayers_Control_LayerSwitcher_21" class="olControlLayerSwitcher olControlNoSelect" unselectable="on" style="position: absolute; width: 0px; height: 0px; z-index: 1005;"><div id="OpenLayers_Control_LayerSwitcher_21_layersDiv" class="layersDiv" style="display: none;"><div class="baseLbl">Base Layer</div><div class="baseLayersDiv"><input id="OpenLayers_Control_LayerSwitcher_21_input_56" name="OpenLayers_Control_LayerSwitcher_21_baseLayers" type="radio" value="OpenStreetMap" checked="" class="olButton"><label class="labelSpan olButton" style="vertical-align: bottom;">OpenStreetMap</label><br></div><div class="dataLbl">Overlays</div><div class="dataLayersDiv"><input id="OpenLayers_Control_LayerSwitcher_21_input_57" name="My Points" type="checkbox" value="My Points" checked="" class="olButton"><label class="labelSpan olButton" style="vertical-align: baseline;">My Points</label><br><input id="OpenLayers_Control_LayerSwitcher_21_input_58" name="Vector Layer" type="checkbox" value="Vector Layer" checked="" class="olButton"><label class="labelSpan olButton" style="vertical-align: baseline;">Vector Layer</label><br></div></div><div id="OpenLayers_Control_MaximizeDiv" class="maximizeDiv olButton" style="position: absolute;"><img id="OpenLayers_Control_MaximizeDiv_innerImage" class="olAlphaImg" src="https://directorist.com/theme/demo/dlist/wp-content/plugins/directorist/public/assets/openstreet/openlayers/img/layer-switcher-maximize.png" style="position: relative;"></div><div id="OpenLayers_Control_MinimizeDiv" class="minimizeDiv olButton" style="position: absolute; display: none;"><img id="OpenLayers_Control_MinimizeDiv_innerImage" class="olAlphaImg" src="https://directorist.com/theme/demo/dlist/wp-content/plugins/directorist/public/assets/openstreet/openlayers/img/layer-switcher-minimize.png" style="position: relative;"></div></div><div id="OpenLayers_Control_DragFeature_59" class="olControlDragFeature olControlNoSelect" unselectable="on" style="position: absolute; z-index: 1006;"></div></div></div>
+                                                                       <div class="cor-wrap">
+                                                                                                                            <label for="manual_coordinate">
+                                                                                                                                <input type="checkbox" name="manual_coordinate" value="1" 
+                                                                                                                                id="manual_coordinate"> 
+                                                                                                                                <a class="atbd_wrapper1" style="color: rgb(122, 130, 166);">
+                                                                                            Or Enter Coordinates (latitude and longitude) Manually     </a>                                                           <span class="cf-select"></span></label>
+                                                        </div>
+            
+                                                    </div>
+            
+                                                    <div class="row">
+                                                        <div id="hide_if_no_manual_cor" class="clearfix" style="display: none;">
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="form-group">
+                                                                    <label for="manual_lat"> Latitude  </label>
+                                                                    <input type="text" name="manual_lat" id="manual_lat" value="40.7127753" class="form-control directory_field" placeholder="Enter Latitude eg. 24.89904">
+                                                                </div>
+                                                            </div>
+            
+                                                            <div class="col-md-6 col-sm-12">
+                                                                <div class="form-group">
+                                                                    <label for="manual_lng"> Longitude </label>
+                                                                    <input type="text" name="manual_lng" id="manual_lng" value="-74.0059728" class="form-control directory_field" placeholder="Enter Longitude eg. 91.87198">
+                                                                </div>
+                                                            </div>
+            
+                                                            <div class="col-md-3 col-sm-12">
+                                                                <div class="form-group lat_btn_wrap">
+                                                                    <button class="btn btn-primary"
+                                                                     id="generate_admin_map atbd_wrapper1">
+                                                                     Generate on Map
+                                                                    </button>
+                                                                </div>
+                                                            </div> <!-- ends #hide_if_no_manual_cor-->
+            
+                                                        </div> <!--ends .row -->
+                                                        <div class="col-sm-12">
+                                                            <div class="form-group hide-map-option">
+                                                                <input type="checkbox" name="hide_map" value="1" id="hide_map">
+                                                                <label for="hide_map">
+                                                                    <a class="atbd_wrapper1" style="color: rgb(122, 130, 166);">
+
+                                                             Hide Map </a> </label>
+                                                            </div>
+                                                        </div>
+                                                    </div> <!--ends .row-->
+                                                </div><!--ends .row-->
+                                                                                    </div>
+                                </div>
+            
+                              <div class="atbd_content_module">
+                                <div class="atbd_content_module__tittle_area">
+                                    <div class="atbd_area_title atbd_wrapper1">
+                                        <h4>Listings FAQs</h4>
+                                    </div>
+                                </div>
+                                    <div class="form-group  atbd_wrapper1">
+                                        <!-- <app-faqs></app-faqs> -->
+                                        </div>
+                
+                                
+                              </div>
+                              <div class="atbd_content_module">
+                                    <div class="atbd_content_module__tittle_area">
+                                        <div class="atbd_area_title atbd_wrapper1">
+                                            <h4>
+                                                Images &amp; Video</h4>
+                                        </div>
+                                    </div>
+            
+                                    <div class="atbdb_content_module_contents atbdp_video_field">
+                                        <!--Image Uploader-->
+                                        <div id="_listing_gallery">
+                                            <div class="add_listing_form_wrapper" id="gallery_upload">
+            <div class="form-group">
+            <!-- image container, which can be manipulated with js -->
+            
+            <!--  add & remove image links -->
+            <p class="hide-if-no-js">
+              
+            <a  class="upload-header btn btn-secondary" style="color: #fff; font-size:15px;">Upload Preview Image</a> <br>
+            </p>
+            </div>
+            <div class="form-group upload-header atbd_wrapper1">
+            <!-- <app-img></app-img> -->
+            </div>
+            </div> <!--ends add_listing_form_wrapper-->
+            
+            
+                                            </div>
+                                            <br>
+                                                                                                                                                                                            <div class="form-group">
+                                                <label for="videourl">Video Url:</label>
+                                                <input type="text" id="videourl" name="videourl" 
+                                                value="" class="form-control directory_field"
+                                                placeholder="Only YouTube &amp; Vimeo URLs.">
+                                            </div>
+                                                                                                                                        </div>
+                                </div>
+            
 
 
 
 
 
 
-
+                                <div class="btn_wrap list_submit" style="text-align:center;">
+                                        <mat-checkbox>
+                                            <a class="atbd_wrapper1" style="color: rgb(122, 130, 166);">
+                                            I accept all Terms & Conditions
+                                        </a></mat-checkbox><br>
+                                      
+                                      <button type="submit" class="btn btn-primary btn-lg listing_submit_btn">
+                                        Submit listing</button>
+                                    </div>
 
 
 
